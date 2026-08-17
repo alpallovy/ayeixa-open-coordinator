@@ -1,16 +1,19 @@
-# Architecture Specification: Ayeixa OpenCoordinator
+# Architecture: Ayeixa OpenCoordinator
 
-## System Overview
-Architecture overview for Ayeixa OpenCoordinator
+## Overview
+Ayeixa OpenCoordinator provides a modular, dependency-free TypeScript kernel for coordinating autonomous multi-agent workloads.
 
-## Architecture Diagram (Mermaid)
+## System Topology
 ```mermaid
 flowchart TD
-    Client["Client Application / Runtime"] --> Router["Ayeixa OpenCoordinator Core"]
-    Router --> Engine["Execution & Boundary Engine"]
-    Engine --> Output["Verified Output / State"]
+    Input["Natural Language / Structured Task"] --> IntentParser["Intent Parser & Risk Evaluator"]
+    IntentParser --> GraphEngine["DAG Task Graph Engine"]
+    GraphEngine --> Router["Capability-Based Agent Router"]
+    Router --> Kernel["Execution Kernel & Lifecycle FSM"]
+    Kernel --> Events["Event Emitter & Completion Receipts"]
 ```
 
-## Design Guarantees
-- **Permissive & Standalone**: Operates hermetically without proprietary enterprise lock-in.
-- **Fail-Closed**: Rejects malformed or untrusted inputs at boundary layer.
+## Component Guarantees
+1. **Deterministic DAG Resolution**: Cycles are detected and rejected fail-closed before execution starts.
+2. **Strict Stage Isolation**: Independent tasks are batched into parallel stages while respecting dependency barriers.
+3. **Fail-Closed State Machine**: Task failures trigger structured error propagation without corrupting adjacent task states.
