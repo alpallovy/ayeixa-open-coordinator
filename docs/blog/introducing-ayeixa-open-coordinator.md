@@ -12,11 +12,11 @@ As multi-agent software engineering systems scale, orchestrating dependent subag
 ---
 
 ## 2. Core Architecture
-OpenCoordinator is structured around three decoupled architectural primitives:
+OpenCoordinator is structured around four decoupled architectural primitives:
 
 1. **IntentParser**: Extracts domain context, action classifications (`CODE`, `TEST`, `DEPLOY`, `RESEARCH`), and capability constraints from natural language task directives.
 2. **TaskGraphEngine**: Constructs an in-memory Directed Acyclic Graph (DAG), executes $O(V + E)$ topological sort, detects dependency cycles deterministically, and groups independent tasks into concurrent execution stages.
-3. **ExecutionKernel**: Implements a hermetic state machine managing task lifecycles (`PENDING`, `RUNNING`, `COMPLETED`, `FAILED`, `BLOCKED`) with bounded event-driven transitions and timeout controls.
+3. **ExecutionKernel**: Implements a state machine managing task lifecycles (`PENDING`, `RUNNING`, `COMPLETED`, `FAILED`, `BLOCKED`) with bounded event-driven transitions.
 4. **AgentRouter**: Evaluates agent capability matrices and active load to route tasks to specialized subagents with fallback policies.
 
 ---
@@ -26,7 +26,7 @@ All capabilities are fully implemented in TypeScript and verified with 100% herm
 - **DAG Resolution**: Topological sorting and stage resolution (`tests/dag.test.ts`).
 - **Intent Parsing**: Deterministic action and entity extraction (`tests/intent.test.ts`).
 - **Router Matching**: Capability-based candidate scoring (`tests/router.test.ts`).
-- **Kernel State**: Timeout handling and error containment (`tests/kernel.test.ts`).
+- **Kernel State**: Lifecycle state transitions and error containment (`tests/kernel.test.ts`).
 
 Test Verification Receipt: **9/9 hermetic unit tests passing** (0 failures, 0 skips).
 
@@ -66,7 +66,7 @@ console.log("Execution stages:", stages);
 
 ## 5. Limitations & Pre-Release Status
 - Current version is `v0.1.0-alpha` intended for pre-release evaluation.
-- Persistence is currently in-memory; distributed durable queue backends are scheduled on the 2026–2028 roadmap.
+- Graph storage and task queues operate in-memory; distributed durable storage backends are scheduled on the 2026–2028 roadmap.
 - Public npm publication is pending.
 
 ---
