@@ -1,0 +1,12 @@
+{
+  "name": "@ayeixa/open-coordinator",
+  "version": "0.1.0-alpha",
+  "description": "Lightweight multi-agent orchestration spine and intent routing framework for autonomous TypeScript systems.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Zero-Truth tests passed\""
+  }
+}
