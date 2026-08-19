@@ -41,8 +41,19 @@ const stages = dag.resolveExecutionStages();
 console.log("Execution stages:", stages);
 ```
 
+## Feedback & real-world use
+
+If you try this project in a real workflow, share technical feedback — including negative results or integration problems — in [Discussions](https://github.com/alpallovy/ayeixa-open-coordinator/discussions/5). Participation is voluntary; no payment required. With explicit permission, useful experiences may become attributed or anonymized case studies.
+
 ## License
 Distributed under the **Apache-2.0** License. See `LICENSE` for details.
 
-## Technical Deep Dive
-Read the full launch technical article: [`docs/blog/introducing-ayeixa-open-coordinator.md`](docs/blog/introducing-ayeixa-open-coordinator.md)
+## Engineering blog
+
+- [OpenCoordinator DAG execution queue](https://alpallovy.github.io/ayeixa-blog/blog/opencoordinator-dag-execution-queue)
+- [Execution receipts in OSS utilities](https://alpallovy.github.io/ayeixa-blog/blog/execution-receipts-runtime-truth-oss)
+- [DEV Community intro](https://dev.to/alp_allovi_45214d2d8316a1/introducing-ayeixa-opencoordinator-multi-agent-dag-orchestration-for-typescript-2o86)
+
+## Feedback
+
+After local evaluation (`npm test`), open a [GitHub issue](https://github.com/alpallovy/ayeixa-open-coordinator/issues) with integration feedback.
