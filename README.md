@@ -5,6 +5,8 @@
 ## Status: Pre-Release (v0.1.0-alpha)
 *Note: Public npm registry publication is pending. To use or evaluate this package, clone and build locally.*
 
+**10-minute try:** see [`TRY_10MIN.md`](./TRY_10MIN.md) → `npm run quicktry`
+
 ## Features
 - **Task Intent Classification**: Deterministic classification of requests into `BUG_FIX`, `REFACTOR`, `FEATURE`, `TEST`, and `DOCUMENTATION` with confidence & risk scoring.
 - **DAG Execution Engine**: Directed Acyclic Graph topology manager with cycle detection, topological ordering, and parallel execution stage batching.
@@ -43,7 +45,7 @@ console.log("Execution stages:", stages);
 
 ## Feedback & real-world use
 
-If you try this project in a real workflow, share technical feedback — including negative results or integration problems — in [Discussions](https://github.com/alpallovy/ayeixa-open-coordinator/discussions/5). Participation is voluntary; no payment required. With explicit permission, useful experiences may become attributed or anonymized case studies.
+If you try this project in a real workflow, share **concrete** technical feedback in [Discussions](https://github.com/alpallovy/ayeixa-open-coordinator/discussions/5) or a [GitHub issue](https://github.com/alpallovy/ayeixa-open-coordinator/issues). Case-study consent hub (after genuine use): [Discussion #6](https://github.com/alpallovy/ayeixa-open-coordinator/discussions/6). Stars and vague interest do not count.
 
 ## License
 Distributed under the **Apache-2.0** License. See `LICENSE` for details.
@@ -51,9 +53,6 @@ Distributed under the **Apache-2.0** License. See `LICENSE` for details.
 ## Engineering blog
 
 - [OpenCoordinator DAG execution queue](https://alpallovy.github.io/ayeixa-blog/blog/opencoordinator-dag-execution-queue)
+- [How to evaluate AYEIXA OSS](https://alpallovy.github.io/ayeixa-blog/blog/how-to-evaluate-ayeixa-oss)
 - [Execution receipts in OSS utilities](https://alpallovy.github.io/ayeixa-blog/blog/execution-receipts-runtime-truth-oss)
 - [DEV Community intro](https://dev.to/alp_allovi_45214d2d8316a1/introducing-ayeixa-opencoordinator-multi-agent-dag-orchestration-for-typescript-2o86)
-
-## Feedback
-
-After local evaluation (`npm test`), open a [GitHub issue](https://github.com/alpallovy/ayeixa-open-coordinator/issues) with integration feedback.

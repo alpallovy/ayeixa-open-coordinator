@@ -44,12 +44,13 @@ Feedback must be **concrete** — not “looks cool” or star-only.
 Only if you want your experience considered for a published case study:
 
 1. Read [`CASE_STUDY_CONSENT.md`](./CASE_STUDY_CONSENT.md)
-2. Post a **new comment** on the same Discussion thread (or issue) containing the consent block
-3. **Explicitly choose** one:
-   - **Named attribution** (GitHub handle + optional name), **or**
-   - **Anonymous attribution** (no public handle in the published case study)
+2. Post a **new comment** on [Discussion #6](https://github.com/alpallovy/ayeixa-open-coordinator/discussions/6) (or your feedback thread)
+3. **Explicitly choose exactly one:**
+   - **NAMED** — publication may attribute your GitHub handle
+   - **ANONYMOUS** — publication may use workflow/outcomes only
+   - **NO_CASE_STUDY** — feedback welcome; do **not** use my experience in a case study
 
-Implied consent is **not** accepted. Copy-paste from the consent template is required.
+Implied consent is **not** accepted. Silence defaults to **NO_CASE_STUDY**.
 
 ---
 
@@ -74,3 +75,8 @@ Early-adopter / feedback threads (one per repo):
 Case-study flow hub (canonical):
 
 - https://github.com/alpallovy/ayeixa-open-coordinator/discussions/6
+
+Public docs (open repository):
+
+- https://github.com/alpallovy/ayeixa-open-coordinator/blob/main/docs/CASE_STUDY_PUBLIC_FLOW.md
+- https://github.com/alpallovy/ayeixa-open-coordinator/blob/main/docs/CASE_STUDY_CONSENT.md

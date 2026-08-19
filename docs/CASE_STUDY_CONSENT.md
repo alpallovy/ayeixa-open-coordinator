@@ -21,6 +21,7 @@ Feedback location: [URL to your issue/comment/PR]
 ATTRIBUTION CHOICE (select exactly one):
 [ ] NAMED — I permit publication with attribution to my GitHub handle: @________
 [ ] ANONYMOUS — I permit publication without naming my public handle
+[ ] NO_CASE_STUDY — Do not use my experience in any case study (feedback only)
 
 I confirm:
 - I am not the project Founder or an AYEIXA-controlled account
@@ -38,9 +39,10 @@ Date (UTC): YYYY-MM-DD
 | Choice | Published case study may include |
 |--------|----------------------------------|
 | **Named** | GitHub handle, optional display name, quoted feedback with link |
-| **Anonymous** | Workflow description and outcomes only — **no** public handle, **no** identifying org unless you opt in separately |
+| **Anonymous** | Workflow description and outcomes only — **no** public handle |
+| **No case study** | Feedback may be used for product improvement only — **not** published as a case study |
 
-You must mark **exactly one** checkbox. Blank or both checked = **no consent**.
+You must mark **exactly one** checkbox. Blank, both checked, or multiple checked = **NO_CASE_STUDY** (no publication consent).
 
 ---
 
